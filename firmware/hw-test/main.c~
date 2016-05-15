@@ -1,0 +1,16 @@
+#include "soc-hw.h"
+
+int main ()
+{   
+    //uart_putstr( "Prueba medicion de temperatura y humedad" ); 
+    serial_init();
+    msleep(40);
+    read_humidity();
+    msleep(1);
+    read_temperature();
+    msleep(1);
+    read_sum();
+    msleep(1);
+    good();         
+}
+
